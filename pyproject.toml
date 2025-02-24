@@ -1,0 +1,23 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "r1rl"
+version = "0.0.1"
+description = "The RL project for R1-like training"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Honghua Dong", email = "dhh19951@gmail.com" },
+]
+dependencies = [
+    "unsloth>=2025.2.15",
+    "loguru>=0.7.3",
+    "termcolor>=2.5.0",
+]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+ignore = ["E501", "F401"]

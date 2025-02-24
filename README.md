@@ -14,7 +14,7 @@ The 200 training steps takes about 2 hours, with total cost less than $2.
 pip install unsloth vllm
 
 # install the package
-git clone https://github.com/dhh1995/R1-RL.git
+git clone https://github.com/dhh1995/R1RL.git
 pip install -e .
 ```
 

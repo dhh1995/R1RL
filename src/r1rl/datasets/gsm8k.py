@@ -87,6 +87,7 @@ class GSM8kDataset(BaseDataset):
             ]
             if self.add_reasoning_prefix:
                 messages.append({"role": "assistant", "content": f"<{REASONING_TAG}>"})
+            return messages
         else:
             prompt = SYSTEM_PROMPT + "\nQuestion: " + question
             if self.add_reasoning_prefix:

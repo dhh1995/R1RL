@@ -58,9 +58,11 @@ We also tried [Qwen/Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-
 
 When not adding the `<reasoning>` tag as the prefix for the completion, the completion length is generally longer with lower reward then the one with the prefix.
 
-### Cheery-pick Results
+### Cherry-pick Results
 
 LLM emerges a self-verification mechanism to check the correctness of the answer. see [full log](_assets/logs_gsm8k.log#28861).
+
+![cherry-pick example](_assets/gsm8k_cherry_pick.png)
 
 ```xml
 Question: After Betty gave Stuart 40% of her marble collection, the number of marbles in Stuart's collection increased to 80. If Betty had 60 marbles, how many marbles did Stuart have initially?
